@@ -47,3 +47,29 @@ text-decoration: underline;
     line-height: var(--line-height-l);
     margin-bottom: var(--margin-l);
 }
+
+@media screen and (max-width: 1200px) {
+    .cartaz {
+        padding: 0 var(--padding-xxl);
+    }
+
+    .menu-list {
+        gap: var(--gap-xs);
+    }
+
+    .cartaz__pesquisa {
+        padding: var(--padding-xs) var(--padding-s);
+        max-width: 100%;
+    }
+
+    .cartaz__titulo {
+        font-size: var(--font-size-m);
+        line-height: var(--line-height-m);
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .cartaz {
+        padding: 0 var(--padding-m);
+    }
+}
