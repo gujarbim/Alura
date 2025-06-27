@@ -24,4 +24,52 @@
 .filme-list__imagem {
     width: 100%;
     object-fit: cover;
-}       
+}
+
+.filme-list__container {
+    padding: var(--padding-s);
+    font-family: var(--fonte-texto);
+    flex-grow: 1;
+
+    display: flex;
+    gap: 42px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.filme-list__linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filme-list__descricao-dimensao, .filme-list__descricao-idade, .filme-list__descricao-idade-livre {
+    padding: var(--padding-xs) var(--padding-s);
+    border-radius: var(--padding-xs);
+}
+
+.filme-list__descricao-dimensao {
+    background-color: var(--cor-de-fundo-input);
+}
+
+.filme-list__descricao-idade {
+    background-color: var(--cor-faixa-etaria);
+}
+
+.filme-list__descricao-idade-livre {
+    background-color: var(--cor-faixa-etaria-livre);
+}
+
+.filme-list__descricao {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xs);
+}
+
+.filme-list__item-titulo {
+    font-size: 1.5em;
+    margin: 0;
+    padding: var(--padding-xs) 0;
+    color: var(--cor-texto-titulo);
+    text-align: center;
+}
