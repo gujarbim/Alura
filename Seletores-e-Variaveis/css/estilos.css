@@ -1,0 +1,92 @@
+@import url("./css/cabecalho.css");
+@import url("./css/destaque.css");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  @media (max-width: 768px) {
+    width: 648px;
+  }
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.alinhamento-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--padding-l);
+
+}
+
+.label-busca {
+  display: flex;
+  flex-grow: 0.5;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--cor-neutra-dark);
+  padding: var(--padding-s) var(--padding-m);
+  border-radius: 2rem;
+}
+
+.label-busca input {
+  border: none;
+  outline: none;
+}
+
+.botao-login {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navegacao {
+  align-content: center;
+}  
+
+.menu-lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #444444;
+  position: relative;
+  padding-bottom: 0.25rem;  
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #444444;
+    transition: width 0.3s ease;
+  }
+}
+
+.menu-link:hover::after,
+.menu-link:focus::after {
+  width: 100%;
+}
