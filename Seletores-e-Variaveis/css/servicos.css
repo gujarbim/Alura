@@ -30,3 +30,16 @@
     font-size: var(--font-size-m);
     color: var(--cor-primaria-light)
 }
+
+.link::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 50%;
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(0);
+    transition: transform 0.3s ease, left 0.3s ease;
+}
