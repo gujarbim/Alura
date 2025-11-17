@@ -4,21 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon-tecboard-roxo.svg">
-  <title>Tecboard</title>
+  <title>Tecboard — Monitoramento</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <img src="img/logo-tecboard-branco.png" alt="Logo Tecboard na cor branca">
+    <div class="container">
+      <a href="index.html" aria-label="Voltar para a página inicial">
+        <img src="img/logo-tecboard-branco.png" alt="Logo Tecboard na cor branca">
+      </a>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>Fique de olho no que importa</h1>
-      <p>Monitoramento em tempo real com alertas inteligentes para sua aplicação nunca sair do ar sem você saber.</p>
-      <a href="#">Testar versão demo</a>
-    </section>
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title">Fique de olho no que importa</h1>
+        <p>Monitoramento em tempo real com alertas inteligentes para sua aplicação nunca sair do ar sem você saber.</p>
+        <p><a class="btn-cta" href="#">Testar versão demo</a></p>
+      </div>
 
-    <img src="img/img-celulares-sobrepostos-desktop.png" alt="Dois celulares pretos sobrepostos, com uma sombra roxa sob eles.">
+      <figure class="hero-figure" aria-hidden="false">
+        <img src="img/img-celulares-sobrepostos-desktop.png" alt="Dois celulares pretos sobrepostos, com uma sombra roxa sob eles.">
+      </figure>
+    </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tecboard — Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
