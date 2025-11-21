@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa Culturama</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Pesquisa Culturama</h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2>Pesquisa Online</h2>
+        <p>Esta página servirá como base para o formulário de pesquisa. Preencha os dados abaixo e envie sua opinião.</p>
+
+        <form action="#" method="post" class="form-pesquisa" novalidate>
+          <fieldset>
+            <legend>Formulário de Pesquisa</legend>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="seu@exemplo.com">
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade" min="0" max="120" placeholder="Ex: 30">
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade / Estado">
+
+            <label for="genero">Gênero</label>
+            <select id="genero" name="genero">
+              <option value="">-- selecione --</option>
+              <option value="feminino">Feminino</option>
+              <option value="masculino">Masculino</option>
+              <option value="nao-binario">Não binário</option>
+              <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+            </select>
+
+            <label for="opiniao">Sua opinião</label>
+            <textarea id="opiniao" name="opiniao" rows="5" placeholder="Conte o que achou..."></textarea>
+
+            <button type="submit">Enviar pesquisa</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 — Pesquisa Culturama</p>
+    </div>
+  </footer>
+</body>
+</html>
